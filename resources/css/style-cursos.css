@@ -1,22 +1,13 @@
-@media (min-width: 576px) {
-    body {
-        font-size: 18px;
-    }
-}
-
 header {
     align-items: center;
-    background-image: url('/resources/img/fundo.jpg');
-    background-size: cover;
     display: flex;
     justify-content: center;
-    height: 50vh; 
+    
 }
-
 
 .menu{
     background-color: white;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px 0 rgba(235, 201, 158, 0.05);
     position: fixed;
     top: 0;
     width: 100vw;
@@ -47,41 +38,33 @@ header {
     font-size: 4em;
 }
 
-.site-title, 
-.site-subtitle{
-    text-align: center;
-}
 section {
     height: 50vh; 
     padding-top: 1vh;
     padding-bottom: 1vh;
-}
-section h2 {
-    font-size: 2em;
-    text-align: center;
+    padding-top: 2em;
 }
 
-.portfolio {
+.curso {
     display: flex;
     justify-content: center;
-    padding: 2em;
+    
     text-align: center;
 }
 
-.portfolio .item-portfolio {
-    height: 15.3em;
-    width: 20.7em;
-    padding: 1em;
-    padding-bottom: 0;
+table {
+    border-bottom: 1px solid #000000;
+    background-color: #f5e2c9;
+    height: 25vh;
+    width:100%; 
 }
 
-.portfolio figcaption {
-    font-size: 18px;
+table tbody {
+    border-top: 5px solid #f5e2c9;
 }
 
-.img-portfolio {
-    height: 180px;
-    width: 250px;
-    border-radius: 15%;
+table th {
+    text-align: left;
+    padding-left: 10px;
 }
 
