@@ -9,8 +9,7 @@ body{
 
 header {
     align-items: center;
-    animation: animatebackground 300s linear infinite;
-    background-image: url('/resources/img/sky-night.jpg');
+    
     background-repeat: repeat-x;
     background-size:cover;
     display: flex;
@@ -19,10 +18,7 @@ header {
     
 }
 
-@keyframes animatebackground {
- from {background-position: 0 0;}
- to {background-position: 1000px 0;}
-}
+
 
 
 .menu{
@@ -47,11 +43,12 @@ header {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
+    transition: background-color 1s, color 1s ;
 }
 
 .menu li a:hover {
-    background-color:#D6D6D6;
-    color: #6D6D6D;
+    background-color:#333;
+    color: whitesmoke;
 }
 .site-title{
     font-size: 4em;
@@ -65,17 +62,46 @@ header {
 
 .site-title, 
 .site-subtitle{
+    color: #333;
     text-align: center;
 }
+
+.sobre,
+.contato {
+    background-image: url('../img/contato-background.jpg');
+    background-size:cover;
+}
+
+.sobre,
+.contato,
 .portfolio {
-    height: 50vh; 
+    height: 100vh; 
     padding: 2em;
 }
+
+.sobre,
+.contato,
+.portfolio{
+    font-size: 2em;
+    text-align: center;
+}
+.sobre h2,
+.contato h2,
 .portfolio h2{
     font-family: 'Parisienne', cursive;
     font-size: 2em;
-    margin-bottom: 1.5em;
-    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 0.5em;
+
+}
+
+.sobre p{
+    color: whitesmoke;
+}
+
+.portfolio h2{
+    color: black;
+
 }
 
 .portfolio .grid {
@@ -87,20 +113,31 @@ header {
     .portfolio .grid {
         grid-template-columns: 180px 180px;
     }
+    .contato,
+    .portfolio {
+        height: 70vh; 
+        padding: 2em;
+    }
 }
 
 @media (min-width: 670px){
     .portfolio .grid {
-        grid-template-columns: 270px 270px 270px;
+        grid-template-columns: 235px 235px 235px;
     }
 }
+
 @media (min-width: 1100px){
     .portfolio .grid {
         grid-template-columns: 350px 350px 350px; 
     }
+    .contato,
+    .portfolio {
+        height: 50vh; 
+        padding: 2em;
+    }
 }
 
-@media (min-width: 1380px){
+@media (min-width: 1500px){
     .portfolio .grid {
         grid-template-columns: 550px 550px 550px; 
     }
@@ -110,11 +147,37 @@ header {
     text-align: center;
 }
 
+.portfolio a {
+    text-decoration: none;
+    color: #333;
+}
+
 
 
 .img-portfolio {
     height: 180px;
     width: 180px;
-    border-radius: 50%;
+    transition: transform 500ms;
+    
 }
 
+
+.img-portfolio:hover{
+    transform: scale(1.2);
+}
+
+
+.contato .icons {
+    text-align: center;
+}
+.contato a {
+    color: whitesmoke;
+    font-size: 3em;
+    text-decoration: none;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+   text-shadow: 0px 0px 10px rgb(218, 218, 45);
+}

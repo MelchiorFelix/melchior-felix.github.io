@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Parisienne&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cf631134d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="apresenta">
@@ -23,25 +24,54 @@
             <h2 class="site-subtitle">Desenvolvedor Java</h2>
         </div>
     </header>
+
+    <section class="sobre" id="sobre">
+        <h2>Sobre Mim</h2>
+        <p></p>
+    </section>
     
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
         <div class="grid">
             <figure class="item-portfolio">
-                <img class="img-portfolio" src="resources/img/mobile-creditos-nate-grant-unsplash.jpg" alt="Mobile">
-                <figcaption>Mobile</figcaption>
+                <a href="">
+                    <img class="img-portfolio" src="resources/img/cell-phone.png" alt="Mobile">
+                    <figcaption>Mobile</figcaption>
+                </a>
             </figure>
             <figure class="item-portfolio">
-                <img class="img-portfolio" src="resources/img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-                <figcaption>Projetos Web</figcaption>
+                <a href="">
+                    <img class="img-portfolio" src="resources/img/domain-registration.png" alt="Web design">
+                    <figcaption>Projetos Web</figcaption>
+                </a>
             </figure>
             <figure class="item-portfolio">
                 <a href="cursos.html" >
-                    <img class="img-portfolio" src="resources/img/cursos.png" alt="Projetos pessoais">
+                    <img class="img-portfolio" src="resources/img/book.png" alt="Projetos pessoais">
+                    <figcaption>Cursos</figcaption>
                 </a>
-                <figcaption>Cursos</figcaption>
             </figure>
         </div>
+      </section>
+
+      <section class="contato" id="contato">
+        <h2>Contato</h2>
+
+          <div class="grid icons">
+            <a target="_blank" href="https://github.com/MelchiorFelix">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/melchiorfelix/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:melchior.alencar@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
       </section>
       
 
