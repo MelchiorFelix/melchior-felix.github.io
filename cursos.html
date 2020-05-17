@@ -5,38 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melchior Felix| Cursos :: Portfolio</title>
     <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="resources/css/style-cursos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <nav class="menu">
-        <ul>
-            <li><a href="/portfolio">Incio</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/portfolio/">Voltar <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
+      </div>
     </nav>
   </header>
 
-  <section>
-    <div class="curso">
-    <table>
-      <tr>
-        <th>Nome do Curso:</th>
-        <td>Spring Boot & MVC com Thymeleaf </td>
-      </tr>
-      <tr>
-        <th>Certificado:</th>
-        <td><a href="https://www.udemy.com/certificate/UC-DEL7HUH3/" target="_blank">Acesse aqui.</a></td>
-      </tr>
-      <tr>
-        <th>Plataforma:</th>
-        <td>Udemy</td>
-      </tr>
-      <tr>
-          <th>Deploy:</th>
-          <td><a href="https://mysterious-lake-74243.herokuapp.com/" target="_blank">Acesse aqui.</a></td>
-        </tr>
-    </table>
-    </div>
+  <section >
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome do Curso</th>
+            <th scope="col">Certificado</th>
+            <th scope="col">Plataforma</th>
+            <th scope="col">Deploy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Spring Boot & MVC com Thymeleaf </td>
+            <td><a href="https://www.udemy.com/certificate/UC-DEL7HUH3/" target="_blank">Acesse aqui.</a></td>
+            <td>Udemy</td>
+            <td><a href="https://mysterious-lake-74243.herokuapp.com/" target="_blank">Acesse aqui.</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Angular 5, JWT, Spring Boot,REST,Security,Data e MongoDB</td>
+            <td><a href="https://www.udemy.com/certificate/UC-b140bb3e-1800-467f-a7f5-ba8c598dc6f7/" target="_blank">Acesse aqui.</a></td>
+            <td>Udemy</td>
+            <td><a href="#" target="_blank">Ainda não</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
   </section>
 
 </body>
