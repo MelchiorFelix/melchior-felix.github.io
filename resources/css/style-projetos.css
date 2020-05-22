@@ -1,0 +1,55 @@
+
+
+.projeto  {
+    background-color:#333;
+    background-size:cover;
+}
+
+.projeto {
+    min-height: 50vh; 
+    padding: 2em;
+}
+
+.projeto{
+    text-align: center;
+}
+
+.projeto h2{
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    color: white;
+    padding-bottom: 0.5em;
+
+}
+
+.projeto p{
+    color: whitesmoke;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.projeto a {
+    color: aqua;
+}
+
+.projeto .img-acess {
+    float: left;
+    margin-right: 2em;
+}
+@media (min-width: 600px) {
+    .projeto .img-acess {
+        float: left;
+    }
+}
+.projeto .img-acess img {
+    width: 500px;
+}
+
+
+
+
+
+
+
