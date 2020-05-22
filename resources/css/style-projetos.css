@@ -27,7 +27,17 @@
     font-size: 1.1em;
     margin-bottom: 1em;
     text-indent: 1em;
-    text-align: justify;
+    text-align: left;
+}
+
+@media(min-width: 600px){
+    .projeto p{
+        color: whitesmoke;
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        text-indent: 1em;
+        text-align: center;
+    }
 }
 
 .projeto a {
@@ -44,9 +54,14 @@
     }
 }
 .projeto .img-acess img {
-    width: 500px;
+    width: 300px;
 }
 
+@media(min-width: 600px){
+    .projeto .img-acess img {
+        width: 500px;
+    }
+}
 
 
 
