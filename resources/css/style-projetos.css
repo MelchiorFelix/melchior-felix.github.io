@@ -1,4 +1,45 @@
+.bg-light {
+    background-color: #f8f9fa;
+}
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link{
+    color: rgba(0,0,0,.9);
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
 
 .projeto  {
     background-color:#333;
@@ -66,5 +107,32 @@
 
 
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 0.8em;
+    
+  }
 
+  @media(min-width: 600px){
+      table{
+          font-size: 1.2em;
+      }
+  }
+  
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
 
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #343a40;
+}
