@@ -136,3 +136,11 @@ table {
     color: #fff;
     background-color: #343a40;
 }
+
+.img-acess img {
+    transition: transform 500ms;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
