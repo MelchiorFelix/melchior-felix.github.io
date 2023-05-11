@@ -72,7 +72,7 @@ header {
 .sobre,
 .contato,
 .portfolio {
-    min-height: 50vh; 
+    min-height: 30vh; 
     padding: 2em;
 }
 
@@ -127,8 +127,9 @@ header {
 }
 
 .portfolio .grid {
-    display: grid;
-    gap: 2em;
+    display: flex;
+    gap: 10em;
+    justify-content: center;
 }
 
 @media (min-width: 520px){
@@ -137,7 +138,7 @@ header {
     }
     .contato,
     .portfolio {
-        height: 70vh; 
+        height: 30vh; 
         padding: 2em;
     }
 }
@@ -154,7 +155,7 @@ header {
     }
     .contato,
     .portfolio {
-        height: 50vh; 
+        height: 30vh; 
         padding: 2em;
     }
 }
